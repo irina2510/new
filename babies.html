@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Test script</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        width: 1000px;
+        height: 500px;
+        margin-left: 100px;
+        margin-top: 80px;
+        text-align:center ;
+        background-image: url(24058524_w640_h640_aurelka.jpg)
+    }
+    form {
+        background: #1dff1e;
+        background: linear-gradient(to right bottom, #ff49dd, #60fff3);
+        text-align: center;
+        width: 500px;
+        height: 500px;
+        margin-left:300px;
+    }
+    p{
+        margin-top: 10px;
+    }
+</style>
+<body>
+<div id="babies-str">
+    <div id="form">
+        <form class="input-form" name="test-form" method="post" action="input.php">
+            <p><b>Сезон:</b><Br>
+                <input name="Choice1" type="checkbox" value="Осень-зима">Осень-Зима<Br>
+                <input name="Choice2" type="checkbox" value="Весна-Лето">Весна-Лето<Br>
+            </p>
+            <p><b>Пол:</b><Br>
+                <input name="Choice3" type="checkbox" value="Мальчик">Мальчик<Br>
+                <input name="Choice4" type="checkbox" value="Девочка">Девочка<Br>
+            </p>
+            <p><b>Категории:</b><Br>
+                <select name="select">
+                    <option selected disabled>Выберите</option>
+                    <option value="Босоножки">Босоножки</option>
+                    <option value="Туфли">Туфли</option>
+                    <option value="Кросовки">Кросовки</option>
+                    <option value="Сапоги">Сапоги</option>
+                </select>
+            </p>
+            <p><b>Размер:</b><Br>
+                <input name="Question" type="radio" value="28-29">28-29<Br>
+                <input name="Question" type="radio" value="30-31">30-31<Br>
+                <input name="Question" type="radio" value="32-33">32-33<Br>
+            </p>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <label>Имя<input type="text" required></label>
+                <label>E-mail<input type="email" required></label>
+            </fieldset>
+            <p>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </p>
+
+        </form>
+    </div>
+
+</body>
+

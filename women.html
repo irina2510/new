@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Test script</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        width: 1000px;
+        height: 500px;
+        margin-left: 100px;
+        margin-top: 80px;
+        text-align:center ;
+        background-image: url(https://fakty.ictv.ua/wp-content/uploads/2018/03/07/377_1-e1520417524113.jpg)
+    }
+    form {
+        background: #ff5a39;
+        background: linear-gradient(to right bottom, yellow, #ff2b1a);
+        text-align: center;
+        width: 500px;
+        height: 500px;
+        margin-left:300px;
+    }
+    p{
+       margin-top: 50px;
+    }
+</style>
+<body>
+<div id="women-str">
+    <div id="form">
+        <form class="input-form" name="test-form" method="post" action="input.php">
+            <p><b>Сезон:</b><Br>
+                <input name="Choice1" type="checkbox" value="Осень-зима">Осень-Зима<Br>
+                <input name="Choice2" type="checkbox" value="Весна-Лето">Весна-Лето<Br>
+            </p>
+            <p><b>Категории:</b><Br>
+                <select name="select">
+                    <option selected disabled>Выберите</option>
+                    <option value="Босоножки">Босоножки</option>
+                    <option value="Туфли">Туфли</option>
+                    <option value="Кросовки">Кросовки</option>
+                    <option value="Сапоги">Сапоги</option>
+                </select>
+            </p>
+            <p><b>Размер:</b><Br>
+                <input name="Question" type="radio" value="36-37">36-37<Br>
+                <input name="Question" type="radio" value="38-39">38-39<Br>
+                <input name="Question" type="radio" value="40">40<Br>
+            </p>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <label>Имя<input type="text" required></label>
+                <label>E-mail<input type="email" required></label>
+            </fieldset>
+            <p>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </p>
+
+        </form>
+    </div>
+
+</body>
+
